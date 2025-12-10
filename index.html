@@ -962,10 +962,9 @@
         function setPreset(preset) {
             const configs = {
                 mosquitto: { 
-    broker: 'test.mosquitto.org', 
-    port: '8081',
-    topic: 'msh/US/2/json/#'  // Listen to everything under this root
-},
+                    broker: 'test.mosquitto.org', 
+                    port: '8081',  // WSS port for secure connection
+                    topic: 'meshtastic/#' 
                 },
                 hivemq: { 
                     broker: 'broker.hivemq.com', 
